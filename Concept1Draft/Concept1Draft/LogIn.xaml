@@ -32,7 +32,7 @@
                 SemanticProperties.Hint="Log In Button"
                 Clicked="OnSinClicked"
                 HorizontalOptions="Fill" 
-                Width="30"/>
+                />
 
             <Label
                 Text="Or if you don't have an account:"
