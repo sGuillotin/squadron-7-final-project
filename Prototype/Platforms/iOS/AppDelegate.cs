@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace IDAPS_Project
+namespace MauiApp1
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

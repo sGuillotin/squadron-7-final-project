@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace IDAPS_Project
+namespace MauiApp1
 {
     public static class MauiProgram
     {

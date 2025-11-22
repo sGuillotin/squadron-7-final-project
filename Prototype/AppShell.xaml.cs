@@ -1,4 +1,4 @@
-﻿namespace IDAPS_Project
+﻿namespace MauiApp1
 {
     public partial class AppShell : Shell
     {

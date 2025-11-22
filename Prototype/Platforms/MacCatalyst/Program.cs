@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace IDAPS_Project
+namespace MauiApp1
 {
     public class Program
     {
