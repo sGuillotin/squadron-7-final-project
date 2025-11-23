@@ -20,5 +20,11 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void goToLogin(object sender, EventArgs e)
+        {
+            // Navigate to the Login page using its route name
+            await Shell.Current.GoToAsync(nameof(Login));
+        }
     }
 }
