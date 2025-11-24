@@ -74,4 +74,10 @@ public partial class Menu : ContentPage
                 break;
         }
     }
+
+    private async void AddOrder(object sender, EventArgs e)
+    {
+        await DisplayAlert("unable to add item", "Items cannot be added to your order at this time", "Ok");
+    }
 }
+

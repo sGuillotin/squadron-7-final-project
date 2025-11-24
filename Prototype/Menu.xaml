@@ -32,7 +32,7 @@
         <Label 
             Text=""
             x:Name="one"/>
-        <Button Text="Add" x:Name="bone" IsVisible="False"/>
+        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder"/>
         <Label 
             Text=""
             VerticalOptions="Center" 
@@ -41,7 +41,7 @@
         <Label 
             Text=""
             x:Name="two"/>
-        <Button Text="Add" x:Name="btwo" IsVisible="False"/>
+        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder"/>
         <Label 
             Text=""
             VerticalOptions="Center" 
@@ -50,7 +50,7 @@
         <Label 
             Text=""
             x:Name="three"/>
-        <Button Text="Add" x:Name="bthree" IsVisible="False"/>
+        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder"/>
         <Label 
             Text=""
             VerticalOptions="Center" 
@@ -59,7 +59,7 @@
         <Label 
             Text=""
             x:Name="four"/>
-        <Button Text="Add" x:Name="bfour" IsVisible="False"/>
+        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder"/>
 
         <Label 
             Text=""
