@@ -14,7 +14,17 @@ public partial class Signup : ContentPage
 
     private async void goToMenu(object sender, EventArgs e)
     {
-        // Navigate to the Menu page using its route name
-        await Shell.Current.GoToAsync(nameof(Menu));
+        //ensure both entries are filled
+        if(string.IsNullOrWhiteSpace(usr.Text) || string.IsNullOrWhiteSpace(pas.Text))
+        {
+            Error.Text = "Username and password MUST be filled in to sign up";
+        }
+        else { Error.Text = ""; }
+
+        if (Error.Text == "")
+        {
+            // Navigate to the Menu page using its route name if textbox is filled
+            await Shell.Current.GoToAsync(nameof(Menu));
+        }
     }
 }

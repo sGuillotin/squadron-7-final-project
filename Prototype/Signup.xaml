@@ -10,7 +10,26 @@
         HorizontalOptions="Center" />
 
         <Button Text="Go back" Clicked="goToMain" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 
-        <Button Text="Go to menu" Clicked="goToMenu" />
+
+        <Entry Placeholder="Choose your username" x:Name="usr" />
+        <Entry Placeholder="Choose your password" x:Name="pas"/>
+
+        <Button Text="Sign up" Clicked="goToMenu" />
+        <Label 
+            Text="" 
+            x:Name="Error"
+            TextColor="DarkRed"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
     </VerticalStackLayout>
 </ContentPage>

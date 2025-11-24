@@ -11,6 +11,47 @@
 
         <Button Text="Go back" Clicked="goToMain" />
 
-        <Button Text="Go to menu" Clicked="goToMenu" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry Placeholder="Type in your username" x:Name="usr" />
+        <Entry Placeholder="Type in your password" x:Name="pas"/>
+
+
+
+        <Button Text="Sign in" Clicked="goToMenu" />
+        <Label 
+            Text="" 
+            x:Name="Error"
+            TextColor="DarkRed"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+
+
+
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Label 
+            Text="Or if you don't have an account..."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Go to signup" Clicked="goToSignup" />
+
     </VerticalStackLayout>
 </ContentPage>
