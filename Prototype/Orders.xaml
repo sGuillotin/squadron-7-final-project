@@ -5,7 +5,7 @@
              Title="Orders">
     <VerticalStackLayout>
         <Label 
-            Text="Orders Page"
+            Text="Orders complete!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 

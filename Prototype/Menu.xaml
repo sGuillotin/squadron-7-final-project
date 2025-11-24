@@ -9,7 +9,70 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Go to cart" Clicked="goToCart" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Picker Title="Food type" x:Name="Foods" SelectedIndexChanged="OnFoodSelected">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Mains</x:String>
+                    <x:String>Sides</x:String>
+                    <x:String>Drinks</x:String>
+                    <x:String>Desserts</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label 
+            Text=""
+            x:Name="one"/>
+        <Button Text="Add" x:Name="bone" IsVisible="False"/>
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text=""
+            x:Name="two"/>
+        <Button Text="Add" x:Name="btwo" IsVisible="False"/>
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text=""
+            x:Name="three"/>
+        <Button Text="Add" x:Name="bthree" IsVisible="False"/>
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text=""
+            x:Name="four"/>
+        <Button Text="Add" x:Name="bfour" IsVisible="False"/>
+
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+
+        <Button Text="Finished ordering" Clicked="goToCart" />
 
         <Button Text="Sign out" Clicked="goToLogin" />
     </VerticalStackLayout>

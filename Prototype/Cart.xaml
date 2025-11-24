@@ -5,7 +5,7 @@
              Title="Cart">
     <VerticalStackLayout>
         <Label 
-            Text="Cart Page"
+            Text="All done?"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
