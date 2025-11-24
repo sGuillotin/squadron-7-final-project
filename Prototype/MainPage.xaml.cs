@@ -20,5 +20,22 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        //Food class - countains name string, and price float
+        public class Food {
+             private string food;
+             private float price;
+            public Food(string food, float price) {
+                this.food = food;
+                this.price = price;
+
+            }
+            //getters for food and price - no setters since item data cannot be written by user
+            public string getFood() {
+                return food;
+            }
+            public float getPrice() {
+                return price;
+            }
+        }
     }
 }
