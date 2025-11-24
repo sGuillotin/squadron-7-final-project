@@ -1,12 +1,11 @@
 namespace MauiApp1;
 
-public partial class Login : ContentPage
+public partial class Signup : ContentPage
 {
-	public Login()
+	public Signup()
 	{
 		InitializeComponent();
 	}
-
     private async void goToMain(object sender, EventArgs e)
     {
         // Navigate to the MainPage, different path bc it is the inital page

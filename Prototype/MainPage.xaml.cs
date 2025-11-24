@@ -9,24 +9,18 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
-<<<<<<< HEAD
-
         private async void goToLogin(object sender, EventArgs e)
         {
             // Navigate to the Login page using its route name
             await Shell.Current.GoToAsync(nameof(Login));
-=======
+        }
+
+        private async void goToSignup(object sender, EventArgs e)
+        {
+            // Navigate to the Signup page using its route name
+            await Shell.Current.GoToAsync(nameof(Signup));
+        }
+
         //Food class - countains name string, and price float
         public class Food {
              private string food;
@@ -43,7 +37,6 @@
             public float getPrice() {
                 return price;
             }
->>>>>>> 03ab1e302d7799ce87526cdea921484ff235b454
         }
     }
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Login"
-             Title="Login">
+             x:Class="MauiApp1.Menu"
+             Title="Menu">
     <VerticalStackLayout>
         <Label 
-            Text="Login Page"
+            Text="Menu Page"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Go back" Clicked="goToMain" />
+        <Button Text="Go to cart" Clicked="goToCart" />
 
-        <Button Text="Go to menu" Clicked="goToMenu" />
+        <Button Text="Sign out" Clicked="goToLogin" />
     </VerticalStackLayout>
 </ContentPage>
