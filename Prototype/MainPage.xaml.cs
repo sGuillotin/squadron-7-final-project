@@ -21,13 +21,6 @@ namespace MauiApp1
             await Shell.Current.GoToAsync(nameof(Signup));
         }
 
-        //Food class - countains name string, and price float
-        public class Food {
-             private string food;
-             private float price;
-            public Food(string food, float price) {
-                this.food = food;
-                this.price = price;
-
+        
     }
 }
