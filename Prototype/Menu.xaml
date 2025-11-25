@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Menu"
+             Title="Menu">
+    <VerticalStackLayout>
+        <Label 
+            Text="Menu Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+
+
+        <Picker Title="Food type" x:Name="Foods" SelectedIndexChanged="OnFoodSelected">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Mains</x:String>
+                    <x:String>Sides</x:String>
+                    <x:String>Drinks</x:String>
+                    <x:String>Desserts</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label 
+            Text=""
+            x:Name="one"/>
+        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+
+        <Label 
+            Text=""
+            x:Name="two"/>
+        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+
+        <Label 
+            Text=""
+            x:Name="three"/>
+        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+
+        <Label 
+            Text=""
+            x:Name="four"/>
+        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+
+
+
+
+        <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 40, 0, 0"/>
+
+        <Button Text="Sign out" Clicked="goToLogin" />
+    </VerticalStackLayout>
+</ContentPage>

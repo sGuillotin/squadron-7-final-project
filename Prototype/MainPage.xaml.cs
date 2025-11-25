@@ -1,4 +1,4 @@
-﻿namespace MauiApp1
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
@@ -9,22 +9,25 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private async void goToLogin(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-            /*SIDE NOTE IDEA: 
-            For the issues of multi-page access, maybe 2 files?
-            One for the cart (List<Food> [I’m going to add more to Food so it can have a quantity value for add to cart])
-            and one for the menu (2D List<Food> for the menu tabs) that get converted back and forth between JSON - Thoughts?
-            */
+            // Navigate to the Login page using its route name
+            await Shell.Current.GoToAsync(nameof(Login));
         }
+
+        private async void goToSignup(object sender, EventArgs e)
+        {
+            // Navigate to the Signup page using its route name
+            await Shell.Current.GoToAsync(nameof(Signup));
+        }
+
+        //Food class - countains name string, and price float
+        public class Food {
+             private string food;
+             private float price;
+            public Food(string food, float price) {
+                this.food = food;
+                this.price = price;
 
     }
 }
