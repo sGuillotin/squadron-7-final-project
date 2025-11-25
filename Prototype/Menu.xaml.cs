@@ -5,7 +5,10 @@ public partial class Menu : ContentPage
 	public Menu()
 	{
 		InitializeComponent();
-	}
+
+        // Set default selection
+        Foods.SelectedIndex = 0;
+    }
 
     private async void goToCart(object sender, EventArgs e)
     {

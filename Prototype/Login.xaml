@@ -9,16 +9,8 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Go back" Clicked="goToMain" />
+        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40"/>
 
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
 
         <Entry Placeholder="Type in your username" x:Name="usr" />
         <Entry Placeholder="Type in your password" x:Name="pas"/>
@@ -32,18 +24,10 @@
             TextColor="DarkRed"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            />
+            Margin="0, 0, 0, 40"/>
 
 
 
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
 
 
         <Label 
