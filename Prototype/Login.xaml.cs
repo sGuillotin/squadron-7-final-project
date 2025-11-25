@@ -2,6 +2,10 @@ namespace MauiApp1;
 
 public partial class Login : ContentPage
 {
+    // create an instance of our login manager (file to be: LoginManager.cs)
+    // one for both signup and login? I guess this instance wouldn't have to be "persistent" or constantly "alive"...
+    // TODO code here
+
 	public Login()
 	{
 		InitializeComponent();
@@ -15,6 +19,16 @@ public partial class Login : ContentPage
 
     private async void goToMenu(object sender, EventArgs e)
     {
+        // further handle input from the user here-
+        // validate input using login manager
+        
+        // if username matches a password in the database (read from dictionary using stream)
+        // let them in
+        // if not a match
+        // let them know
+
+        // TODO code here
+
         //ensure both entries are filled
         if (string.IsNullOrWhiteSpace(usr.Text) || string.IsNullOrWhiteSpace(pas.Text))
         {
