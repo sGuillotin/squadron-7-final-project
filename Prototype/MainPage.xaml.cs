@@ -19,23 +19,12 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+            /*SIDE NOTE IDEA: 
+            For the issues of multi-page access, maybe 2 files?
+            One for the cart (List<Food> [I’m going to add more to Food so it can have a quantity value for add to cart])
+            and one for the menu (2D List<Food> for the menu tabs) that get converted back and forth between JSON - Thoughts?
+            */
         }
-        //Food class - countains name string, and price float
-        public class Food {
-             private string food;
-             private float price;
-            public Food(string food, float price) {
-                this.food = food;
-                this.price = price;
 
-            }
-            //getters for food and price - no setters since item data cannot be written by user
-            public string getFood() {
-                return food;
-            }
-            public float getPrice() {
-                return price;
-            }
-        }
     }
 }
