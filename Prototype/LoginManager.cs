@@ -6,10 +6,11 @@ public class LoginManager
     // create a blueprint for our login managers
     // TODO code here
 
-	public Login()
+	/* public void Login()
 	{
 		InitializeComponent();
 	}
+    */
 
     // 1. load from file to directory
 
