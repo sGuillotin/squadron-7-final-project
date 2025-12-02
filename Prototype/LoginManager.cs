@@ -3,19 +3,19 @@ using System.IO;
 
 public class LoginManager
 {
-    // create a blueprint for our login managers
+    private Dictionary<string, string> login;
+    public LoginManager()
+    {
+        // initialize dictionary and set it equal to loading from JSON file
+        // write stuff from userRef here
+        // end in this.login = playerData; (instead of "return")
+    }
+
     // TODO code here
 
     // Dictionary<user,password> login(?)= new Dictionary<user,password>();
-    Dictionary<string,string> login(?)= new Dictionary<string,string>();
+    //login(?).Add(param1, param2);
 
-    login(?).Add(param1, param2);
-
-    public Login()
-	{
-		InitializeComponent();
-	}
-    */
 
     // 1. load from file to directory
 

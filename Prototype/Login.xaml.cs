@@ -2,11 +2,15 @@ namespace MauiApp1;
 
 public partial class Login : ContentPage
 {
-    // create an instance of our login manager (file to be: LoginManager.cs)
-    // one for both signup and login? I guess this instance wouldn't have to be "persistent" or constantly "alive"...
+    // this is c# for the frontend functionality - no backend code here yet
+    // will be integrated later like Cart to Menu
+
+    // create an instance of our login manager (file to be: LoginManager.cs) eventually
+    // one for both signup and login I think
+    // I guess this instance wouldn't have to be "persistent" or constantly "alive"...
     // TODO code here
 
-	public Login()
+    public Login()
 	{
 		InitializeComponent();
 	}
@@ -16,6 +20,7 @@ public partial class Login : ContentPage
         // Navigate to the MainPage, different path bc it is the inital page
         await Shell.Current.GoToAsync("//MainPage");
     }
+
 
     private async void goToMenu(object sender, EventArgs e)
     {
