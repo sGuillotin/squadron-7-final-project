@@ -6,9 +6,49 @@
     xmlns:local="clr-namespace:MauiApp1"
     Title="MauiApp1">
 
+    <!-- Main Page -->
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <!-- Menu Page -->
+    <ShellContent
+        Title="Menu"
+        ContentTemplate="{DataTemplate local:Menu}"
+        Route="Menu" />
+
+    <!-- Cart Page -->
+    <ShellContent
+        Title="Cart"
+        ContentTemplate="{DataTemplate local:Cart}"
+        Route="Cart" />
+
+    <!-- Login Page -->
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:Login}"
+        Route="Login" />
+
+    <!-- Signup Page -->
+    <ShellContent
+        Title="Signup"
+        ContentTemplate="{DataTemplate local:Signup}"
+        Route="Signup" />
+
+    <!-- Orders Page (if used) -->
+    <ShellContent
+        Title="Orders"
+        ContentTemplate="{DataTemplate local:Orders}"
+        Route="Orders" />
+
+    <!-- Confirmation Page -->
+    <ShellContent
+        Title="Confirmation"
+        ContentTemplate="{DataTemplate local:Confirmation}"
+        Route="Confirmation" />
+
 </Shell>
+
+
+
