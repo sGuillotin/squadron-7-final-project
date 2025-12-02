@@ -6,7 +6,12 @@ public class LoginManager
     // create a blueprint for our login managers
     // TODO code here
 
-	/* public void Login()
+    // Dictionary<user,password> login(?)= new Dictionary<user,password>();
+    Dictionary<string,string> login(?)= new Dictionary<string,string>();
+
+    login(?).Add(param1, param2);
+
+    public Login()
 	{
 		InitializeComponent();
 	}
