@@ -16,7 +16,7 @@ public class LoginManager
         // 1. load from file to directory
 
         //gets file JSON data, converts back to dictionary
-        StreamReader userRead = new StreamReader("Resources/accounts_data.txt");
+        StreamReader userRead = new StreamReader("../../../../Resources/accounts_data.txt");
         string fileData = userRead.ReadToEnd();
 
         // deserialize from file to dictionary
@@ -51,9 +51,11 @@ public class LoginManager
         userWrite.Write(jsonData);
         // close stream
         userWrite.Close();
-    }
 
+        // Recap:
         // If user already exists return false
         // Append, or read and re-write with new info, to text file
         // format username : password (whatever dictionary needs to have key:value pairs)
+    }
+
 }
