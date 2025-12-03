@@ -7,15 +7,19 @@ public class LoginManager
     // TODO code here
 
     // Dictionary<user,password> login(?)= new Dictionary<user,password>();
-    Dictionary<string,string> login(?)= new Dictionary<string,string>();
+    // Dictionary<string,string> login= new Dictionary<string,string>();
+    private Dictionary<string, string> login;
 
-    login(?).Add(param1, param2);
+    public LoginManager()
+    {
+        // file io stuff here
+        // deserialize from file to dictionary
+        this.login = new Dictionary<string, string>();
+        // add stuff from userRef here
+    }
 
-    public Login()
-	{
-		InitializeComponent();
-	}
-    */
+    // login(?).Add(param1, param2);
+
 
     // 1. load from file to directory
 
