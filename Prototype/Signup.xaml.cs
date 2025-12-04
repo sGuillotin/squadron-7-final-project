@@ -12,8 +12,13 @@ public partial class Signup : ContentPage
         await Shell.Current.GoToAsync("//MainPage");
     }
 
-    // this is c# for the frontend functionality - no backend code here yet
-    // will be integrated later like Cart to Menu
+    // Connect code on this page to same as login page - use LoginManager
+    // Check for empty fields
+    // Ensure username is not already taken
+    // Call .register in available
+    // Print a confirmation message on the UI
+    
+    // TODO code here
 
     private async void goToMenu(object sender, EventArgs e)
     {
