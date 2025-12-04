@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MauiApp1
 {
-    internal class Menu
+    internal class MenuData
     {
         //menu page holder
         private Dictionary<string, Dictionary<string, Food>> menuPages;
         
-        public Menu()
+        public MenuData()
         {
             this.menuPages = new Dictionary<string, Dictionary<string, Food>>();
             this.menuPages["page"]["food"] = new Food("food", 1.00);
