@@ -25,7 +25,7 @@ namespace MauiApp1
         }
         public float getPrice()
         {
-            return price;
+            return (price*quantity);
         }
         //for quantity, it'll be modified with add to cart - increment/decrement only for now
         public void addItem() { 
