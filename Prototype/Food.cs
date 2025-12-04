@@ -10,9 +10,9 @@ namespace MauiApp1
     internal class Food
     {
         private string food;
-        private float price;
+        private double price;
         private int quantity;
-        public Food(string food, float price)
+        public Food(string food, double price)
         {
             this.food = food;
             this.price = price;
@@ -23,7 +23,7 @@ namespace MauiApp1
         {
             return food;
         }
-        public float getPrice()
+        public double getPrice()
         {
             return (price*quantity);
         }
