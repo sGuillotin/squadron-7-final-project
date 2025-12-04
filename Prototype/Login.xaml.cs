@@ -2,6 +2,9 @@ namespace MauiApp1;
 
 public partial class Login : ContentPage
 {
+    // this is c# for the frontend functionality - no backend code here yet
+    // will be integrated later like Cart to Menu
+
     // create an instance of our login manager (of LoginManager.cs)
     // one for both signup and login? I guess this instance wouldn't have to be "persistent" or constantly "alive"...
     LoginManager loginer = new LoginManager();
