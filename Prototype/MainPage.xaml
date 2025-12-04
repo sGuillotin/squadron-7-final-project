@@ -10,7 +10,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <Button Text="Go to login" Clicked="goToLogin" />
+            <Button Text="Go to login" Clicked="goToLogin" Margin="0, 0, 0, 40"/>
 
             <Button Text="Go to signup" Clicked="goToSignup" />
         </VerticalStackLayout>
