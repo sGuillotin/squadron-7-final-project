@@ -5,7 +5,7 @@ using System.Text.Json;
 public class LoginManager
 {
     // create a blueprint for our login managers
-    private Dictionary<string, string> login;
+    public Dictionary<string, string> login;
     // if login needs to be read only uncomment below line
     // private readonly Dictionary<string, string> login;
     // we need write abilites though, rite?
@@ -43,14 +43,22 @@ public class LoginManager
     // adds key, value to dictionary, parses into JSON, writes to file
     public static void RegisterNewUser(string username, string password, Dictionary<string, string> database)
     {
-        // add new key, value pair to dictionary
-        database[username] = password;
-        // Append, or read and re-write with new info, to text file
-        string jsonData = JsonSerializer.Serialize(database);
-        StreamWriter userWrite = new StreamWriter("Resources/accounts_data.txt", false);
-        userWrite.Write(jsonData);
-        // close stream
-        userWrite.Close();
+        if (database.ContainsKey(username))
+        {
+            // User already exists
+            throw new InvalidOperationException("Username already taken.");
+        }
+        else
+        {
+            // add new key, value pair to dictionary
+            database[username] = password;
+            // Append, or read and re-write with new info, to text file
+            string jsonData = JsonSerializer.Serialize(database);
+            StreamWriter userWrite = new StreamWriter("Resources/accounts_data.txt", false);
+            userWrite.Write(jsonData);
+            // close stream
+            userWrite.Close();
+        }
 
         // Recap:
         // If user already exists return false

@@ -1,8 +1,10 @@
+using CloudKit;
+
 namespace MauiApp1;
 
 public partial class Signup : ContentPage
 {
-    LoginManager loginer = new LoginManager();
+    readonly LoginManager signuper = new LoginManager();
     public Signup()
 	{
 		InitializeComponent();
@@ -15,8 +17,8 @@ public partial class Signup : ContentPage
 
     // Connect code on this page to same as login page - use LoginManager
     // Check for empty fields
-    // Ensure username is not already taken
-    // Call .register in available
+    // Ensure username is not already taken - handled by LoginManager
+    // Call .register
     // Print a confirmation message on the UI
     
     // CODE
@@ -30,8 +32,15 @@ public partial class Signup : ContentPage
         }
         else {
             //register new user
-            loginer.RegisterNewUser(usr.Text, pas.Text, loginer); //TODO debuug this
-        
+            try
+            {
+                LoginManager.RegisterNewUser(usr.Text, pas.Text, signuper.login); //TODO debuug this
+            }
+            catch (InvalidOperationException)
+            {
+                Error.Text = "Username already taken.";
+            }
+
             // Navigate to the Menu page using its route name if textbox is filled
             await Shell.Current.GoToAsync(nameof(Menu));
         }

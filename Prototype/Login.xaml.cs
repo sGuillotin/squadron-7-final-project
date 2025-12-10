@@ -7,7 +7,7 @@ public partial class Login : ContentPage
 
     // create an instance of our login manager (of LoginManager.cs)
     // one for both signup and login? I guess this instance wouldn't have to be "persistent" or constantly "alive"...
-    LoginManager loginer = new LoginManager();
+    readonly LoginManager loginer = new LoginManager();
 
     public Login()
 	{
