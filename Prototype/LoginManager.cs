@@ -10,6 +10,9 @@ public class LoginManager
     // private readonly Dictionary<string, string> login;
     // we need write abilites though, rite?
 
+    // store current user
+    public string currentUser = "";
+
     public LoginManager()
     {
         // file io stuff here
@@ -21,6 +24,7 @@ public class LoginManager
 
         // deserialize from file to dictionary
         login = JsonSerializer.Deserialize<Dictionary<string, string>>(fileData);
+        // automatically does this.login = login;
         userRead.Close();
     }
 
@@ -34,7 +38,12 @@ public class LoginManager
         if (login.ContainsKey(username))
         {
             // check if password matches
-            return login[username] == password;
+            if(login[username] == password)
+            {
+                // set current user
+                currentUser = username;
+                return true;
+            }
         }
         return false;
     }

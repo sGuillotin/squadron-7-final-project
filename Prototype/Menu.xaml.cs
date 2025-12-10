@@ -4,7 +4,7 @@ public partial class Menu : ContentPage
 {
     private readonly CartService _cart;
     LoginManager menuHelper = new LoginManager();
-    // Sebastien TODO: add $"Sign out of {usr.Text}" to sign out button - ask Adam where
+    // Sebastien TODO:  - ask Adam where
 
     public Menu(CartService cart)
     {
@@ -13,6 +13,10 @@ public partial class Menu : ContentPage
 
         // Default selection
         Foods.SelectedIndex = 0;
+
+        // Sebastien added this
+        // add $"Sign out of {usr.Text}" to sign out button
+        signout.Text = $"Sign out of {menuHelper.currentUser}";
     }
 
     private async void goToCart(object sender, EventArgs e)

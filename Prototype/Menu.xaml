@@ -47,6 +47,6 @@
 
         <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 40, 0, 0"/>
 
-        <Button Text="Sign out" Clicked="goToLogin" />
+        <Button Text="Sign out" x:Name="signout" Clicked="goToLogin"/>
     </VerticalStackLayout>
 </ContentPage>
