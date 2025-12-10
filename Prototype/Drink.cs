@@ -11,8 +11,9 @@ namespace MauiApp1
     {
         private string[] sizing = ["S", "M", "L"];
         private int size = 1;
+        private bool hasIce = false;
     
-        public Drink(string food, double price, string size):base(food,price) {
+        public Drink(string food, double price, string size, bool hasIce):base(food,price) {
             for (int i = 0; i < sizing.Length; i++)
             { 
                 if(size == sizing[i] && i!=1)
@@ -20,6 +21,7 @@ namespace MauiApp1
                     this.size = i;
                 }
             }
+            this.hasIce = hasIce;
         }
 
         public override double getPrice()
@@ -41,6 +43,10 @@ namespace MauiApp1
         public string getSize()
         {
             return sizing[this.size];
+        }
+        public bool getIce()
+        {
+            return hasIce;
         }
     }
 }
