@@ -54,7 +54,7 @@ public class LoginManager
             database[username] = password;
             // Append, or read and re-write with new info, to text file
             string jsonData = JsonSerializer.Serialize(database);
-            StreamWriter userWrite = new StreamWriter("Resources/accounts_data.txt", false);
+            StreamWriter userWrite = new StreamWriter("../../../../Resources/accounts_data.txt", false);
             userWrite.Write(jsonData);
             // close stream
             userWrite.Close();
