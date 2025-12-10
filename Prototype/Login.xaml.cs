@@ -23,13 +23,8 @@ public partial class Login : ContentPage
     private async void goToMenu(object sender, EventArgs e)
     {
         // SUMMARY
-        // further handle input from the user here-
-        // validate input 
-
-        // if username matches a password in the database (read from dictionary using stream)
-        // let them in
-        // if not a match
-        // let them know
+        // if username matches a password in the database, let them in
+        // if not a match, let them know
 
         // CODE
         // Ensure both entries are filled
@@ -44,7 +39,6 @@ public partial class Login : ContentPage
             // Error.Text = $"Welcome, {usr.Text}"; // how display in a diff color for success message?
             Console.WriteLine($"Login successful; Welcome, {usr.Text}");
             System.Diagnostics.Debug.WriteLine($"Login successful; Welcome, {usr.Text}"); // what's this do? "- debug console output?" thanks IntelliJ
-            // put them through to the Menu page if they valid
             // Navigate to the Menu page using its route name if there is no error
             await Shell.Current.GoToAsync(nameof(Menu));
         }
