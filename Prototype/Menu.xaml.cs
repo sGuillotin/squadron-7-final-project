@@ -4,7 +4,6 @@ public partial class Menu : ContentPage
 {
     private readonly CartService _cart;
     LoginManager menuHelper = new LoginManager();
-    // Sebastien TODO:  - ask Adam where
 
     public Menu(CartService cart)
     {

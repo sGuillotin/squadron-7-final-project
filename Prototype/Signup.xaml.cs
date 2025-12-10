@@ -1,4 +1,5 @@
 //using CloudKit;
+//FRONT-END: not sure what's causing the issue with the above line,  but commenting it out removes the build error with no new deformities to sign-up. - Sam
 
 namespace MauiApp1;
 
