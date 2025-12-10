@@ -9,9 +9,9 @@ namespace MauiApp1
     //Food class - countains name string, price float, and int quantity
     internal class Food
     {
-        private string food;
-        private double price;
-        private int quantity;
+        protected string food;
+        protected double price;
+        protected int quantity;
         public Food(string food, double price)
         {
             this.food = food;
@@ -23,7 +23,7 @@ namespace MauiApp1
         {
             return food;
         }
-        public double getPrice()
+        virtual public double getPrice()
         {
             return (price*quantity);
         }
