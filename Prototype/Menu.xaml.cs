@@ -4,7 +4,7 @@ public partial class Menu : ContentPage
 {
     private readonly CartService _cart;
     LoginManager menuHelper = new LoginManager();
-    // Sebatien TODO: add $"Sign out of {usr.Text}" to sign out button - ask Adam where
+    // Sebastien TODO: add $"Sign out of {usr.Text}" to sign out button - ask Adam where
 
     public Menu(CartService cart)
     {

@@ -57,5 +57,4 @@ public class LoginManager
         // Append, or read and re-write with new info, to text file
         // format username : password (whatever dictionary needs to have key:value pairs)
     }
-
 }

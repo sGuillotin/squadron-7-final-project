@@ -41,7 +41,7 @@ public partial class Login : ContentPage
         // validate login (using method of login manager object)
         else if (loginer.ValidateLogin(usr.Text, pas.Text))
         {
-            // Error.Text = $"Welcome, {usr.Text}"; // want to display in a diff color for success message
+            // Error.Text = $"Welcome, {usr.Text}"; // how display in a diff color for success message?
             Console.WriteLine($"Login successful; Welcome, {usr.Text}");
             System.Diagnostics.Debug.WriteLine($"Login successful; Welcome, {usr.Text}"); // what's this do? "- debug console output?" thanks IntelliJ
             // put them through to the Menu page if they valid
