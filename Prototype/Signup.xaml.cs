@@ -4,7 +4,8 @@
 namespace MauiApp1;
 
 public partial class Signup : ContentPage
-{
+{    
+    // Connect code on this page to same as login page - use LoginManager
     readonly LoginManager signuper = new LoginManager();
     public Signup()
     {
@@ -16,7 +17,6 @@ public partial class Signup : ContentPage
         await Shell.Current.GoToAsync("//MainPage");
     }
 
-    // Connect code on this page to same as login page - use LoginManager
     // Check for empty fields
     // Ensure username is not already taken - handled by LoginManager
     // Call .register

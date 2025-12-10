@@ -23,10 +23,8 @@ public partial class Login : ContentPage
     private async void goToMenu(object sender, EventArgs e)
     {
         // SUMMARY
-        // if username matches a password in the database (read from dictionary using stream)
-        // let them in
-        // if not a match
-        // let them know
+        // if username matches a password in the database, let them in
+        // if not a match, let them know
 
         // CODE
         // Ensure both entries are filled

@@ -15,7 +15,7 @@ public partial class Menu : ContentPage
 
         // Sebastien added this
         // add $"Sign out of {usr.Text}" to sign out button
-        signout.Text = $"Sign out of {menuHelper.currentUser}";
+        signout.Text = $"Sign out of {menuHelper.currentUser}"; // TODO debug
     }
 
     private async void goToCart(object sender, EventArgs e)
