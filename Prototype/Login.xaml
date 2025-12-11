@@ -9,7 +9,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40"/>
+        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
 
 
         <Entry Placeholder="Type in your username" x:Name="usr" />
@@ -17,7 +17,7 @@
 
 
 
-        <Button Text="Sign in" Clicked="goToMenu" />
+        <Button Text="Sign in" Clicked="goToMenu" BackgroundColor="Orange"/>
         <Label 
             Text="" 
             x:Name="Error"
@@ -33,9 +33,10 @@
         <Label 
             Text="Or if you don't have an account..."
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            />
 
-        <Button Text="Go to signup" Clicked="goToSignup" />
+        <Button Text="Go to signup" Clicked="goToSignup" BackgroundColor="Orange"/>
 
     </VerticalStackLayout>
 </ContentPage>

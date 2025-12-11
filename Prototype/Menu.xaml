@@ -25,28 +25,28 @@
         <Label 
             Text=""
             x:Name="one"/>
-        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
 
         <Label 
             Text=""
             x:Name="two"/>
-        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
 
         <Label 
             Text=""
             x:Name="three"/>
-        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
 
         <Label 
             Text=""
             x:Name="four"/>
-        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
 
 
 
 
-        <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 40, 0, 0"/>
+        <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 40, 0, 0" BackgroundColor="Orange"/>
 
-        <Button Text="Sign out" x:Name="signout" Clicked="goToLogin"/>
+        <Button Text="Sign out" x:Name="signout" Clicked="goToLogin" BackgroundColor="Orange"/>
     </VerticalStackLayout>
 </ContentPage>

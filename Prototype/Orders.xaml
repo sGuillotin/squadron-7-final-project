@@ -9,6 +9,6 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Done" Clicked="goToMain" />
+        <Button Text="Done" Clicked="goToMain" BackgroundColor="Orange"/>
     </VerticalStackLayout>
 </ContentPage>
