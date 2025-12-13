@@ -35,31 +35,36 @@ public partial class Menu : ContentPage
         switch (selected)
         {
             case "Mains":
-                one.Text = "Cheeseburger";
-                two.Text = "Tacos (3)";
-                three.Text = "Chicken tenders (3)";
-                four.Text = "Salad";
+                one.Text = "Margherita Pizza";
+                two.Text = "Spaghetti Carbonara";
+                three.Text = "Chicken Fettuccine Alfredo";
+                four.Text = "Penne Alla Vodka";
+
+                cone.Source = "pizza.png";
+                ctwo.Source = "carbonara.png";
+                cthree.Source = "alfredo.png";
+                cfour.Source = "penne.png";
                 break;
 
             case "Sides":
-                one.Text = "Fries";
-                two.Text = "Mozzarella sticks";
-                three.Text = "Onion rings";
-                four.Text = "Chips";
+                one.Text = "Garlic Bread";
+                two.Text = "Caprese Salad";
+                three.Text = "Roasted Broccoli";
+                four.Text = "Focaccia Bread";
                 break;
 
             case "Drinks":
-                one.Text = "Water bottle";
-                two.Text = "Cola";
-                three.Text = "Diet cola";
-                four.Text = "Mtn Dew: Baja Blast";
+                one.Text = "Water";
+                two.Text = "Espresso";
+                three.Text = "Limonata";
+                four.Text = "Chinotto";
                 break;
 
             case "Desserts":
-                one.Text = "Churro";
-                two.Text = "Cookie";
-                three.Text = "Brownie";
-                four.Text = "Donut";
+                one.Text = "Tiramisu";
+                two.Text = "Panna Cotta";
+                three.Text = "Gelato";
+                four.Text = "Canoli";
                 break;
         }
 

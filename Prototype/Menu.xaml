@@ -16,7 +16,7 @@
             </Picker.ItemsSource>
         </Picker>
         
-        <Grid HeightRequest="250" Margin="10" RowSpacing="10" ColumnSpacing="30">
+        <Grid HeightRequest="550" Margin="10" RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -26,17 +26,37 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="" x:Name="one" Grid.Row="0"  Grid.Column="0" VerticalOptions="Start"/>
-            <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="0"  Grid.Column="0" VerticalOptions="End"/>
+            <VerticalStackLayout Grid.Row="0"  Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="null" x:Name="cone" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <HorizontalStackLayout >
+                    <Label Text="" x:Name="one" Margin="30, 10"/>
+                    <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
 
-            <Label Text="" x:Name="two" Grid.Row="0"  Grid.Column="1" VerticalOptions="Start"/>
-            <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="0"  Grid.Column="1" VerticalOptions="End"/>
+            <VerticalStackLayout Grid.Row="0"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="null" x:Name="ctwo" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <HorizontalStackLayout>
+                    <Label Text="" x:Name="two" Margin="30, 10"/>
+                    <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
 
-            <Label Text="" x:Name="three" Grid.Row="1"  Grid.Column="0" VerticalOptions="Start"/>
-            <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="1"  Grid.Column="0" VerticalOptions="End"/>
+            <VerticalStackLayout Grid.Row="1"  Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="null" x:Name="cthree" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <HorizontalStackLayout>
+                    <Label Text="" x:Name="three" Margin="30, 10"/>
+                    <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
 
-            <Label Text="" x:Name="four" Grid.Row="1"  Grid.Column="1" VerticalOptions="Start"/>
-            <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="1"  Grid.Column="1" VerticalOptions="End"/>
+            <VerticalStackLayout Grid.Row="1"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="null" x:Name="cfour" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <HorizontalStackLayout>
+                    <Label Text="" x:Name="four" Margin="30, 10"/>
+                    <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
 
         </Grid>
 
@@ -50,7 +70,7 @@
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 0, 0, 20" Grid.Row="0"  Grid.Column="1"/>
+            <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 10, 0, 20" Grid.Row="0"  Grid.Column="1"/>
 
             <Button Text="Sign Out" x:Name="signout" Clicked="goToLogin" Grid.Row="1"  Grid.Column="1"/>
         </Grid>
