@@ -4,12 +4,6 @@
              x:Class="MauiApp1.Menu">
     
     <VerticalStackLayout>
-        <Label 
-            Text="Menu Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            />
-
 
         <Picker Title="Food type" x:Name="Foods" SelectedIndexChanged="OnFoodSelected">
             <Picker.ItemsSource>
@@ -21,32 +15,44 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        
+        <Grid HeightRequest="250" Margin="10" RowSpacing="10" ColumnSpacing="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        <Label 
-            Text=""
-            x:Name="one"/>
-        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+            <Label Text="" x:Name="one" Grid.Row="0"  Grid.Column="0" VerticalOptions="Start"/>
+            <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="0"  Grid.Column="0" VerticalOptions="End"/>
 
-        <Label 
-            Text=""
-            x:Name="two"/>
-        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+            <Label Text="" x:Name="two" Grid.Row="0"  Grid.Column="1" VerticalOptions="Start"/>
+            <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="0"  Grid.Column="1" VerticalOptions="End"/>
 
-        <Label 
-            Text=""
-            x:Name="three"/>
-        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+            <Label Text="" x:Name="three" Grid.Row="1"  Grid.Column="0" VerticalOptions="Start"/>
+            <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="1"  Grid.Column="0" VerticalOptions="End"/>
 
-        <Label 
-            Text=""
-            x:Name="four"/>
-        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40"/>
+            <Label Text="" x:Name="four" Grid.Row="1"  Grid.Column="1" VerticalOptions="Start"/>
+            <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" Margin="0, 0, 0, 40" Grid.Row="1"  Grid.Column="1" VerticalOptions="End"/>
 
+        </Grid>
 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 0, 0, 20" Grid.Row="0"  Grid.Column="1"/>
 
-
-        <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 40, 0, 0"/>
-
-        <Button Text="Sign Out" x:Name="signout" Clicked="goToLogin"/>
+            <Button Text="Sign Out" x:Name="signout" Clicked="goToLogin" Grid.Row="1"  Grid.Column="1"/>
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>
