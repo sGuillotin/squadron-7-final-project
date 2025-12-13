@@ -15,6 +15,7 @@
                     <HorizontalStackLayout Spacing="10">
                         <Label Text="{Binding Name}" />
                         <Label Text="{Binding Quantity}" />
+                        <Label Text="{Binding Price}" />
                         <Button Text="+" Clicked="AddItem" />
                         <Button Text="-" Clicked="RemoveItem" />
                     </HorizontalStackLayout>

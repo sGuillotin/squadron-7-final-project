@@ -23,6 +23,7 @@ namespace MauiApp1
         // Properties for XAML binding
         public string Name => food;
         public int Quantity => quantity;
+        public double Price => price;
 
         // Must be virtual (SizedFood depends on this)
         public virtual double getPrice()
