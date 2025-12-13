@@ -9,26 +9,34 @@ namespace MauiApp1;
 
 public class CartService
 {
-    public ObservableCollection<CartItem> Items { get; private set; } = new();
+    public ObservableCollection<Food> Items { get; private set; } = new();
 
-    public void AddItem(string itemName)
+    public void AddFood(string foodName)
     {
-        var existing = Items.FirstOrDefault(i => i.Name == itemName);
+        var existing = Items.FirstOrDefault(f => f.Name == foodName);
 
         if (existing != null)
         {
-            existing.Quantity++;
+            existing.AddOne();
         }
         else
         {
-            Items.Add(new CartItem { Name = itemName, Quantity = 1 });
+            var food = new Food(foodName);
+            food.AddOne();
+            Items.Add(food);
         }
     }
 
-    public void Clear()
+    public void SubtractFood(Food food)
     {
-        Items.Clear();
+        food.RemoveOne();
+
+        if (food.Quantity == 0)
+            Items.Remove(food);
     }
 }
+
+
+
 
 

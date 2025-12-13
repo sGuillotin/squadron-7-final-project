@@ -73,14 +73,15 @@ public partial class Menu : ContentPage
     private void AddOrder(object sender, EventArgs e)
     {
         if (sender == bone)
-            _cart.AddItem(one.Text);
+            _cart.AddFood(one.Text);
         else if (sender == btwo)
-            _cart.AddItem(two.Text);
+            _cart.AddFood(two.Text);
         else if (sender == bthree)
-            _cart.AddItem(three.Text);
+            _cart.AddFood(three.Text);
         else if (sender == bfour)
-            _cart.AddItem(four.Text);
+            _cart.AddFood(four.Text);
     }
+
 }
 
 

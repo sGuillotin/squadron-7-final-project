@@ -12,6 +12,20 @@ public partial class Cart : ContentPage
         CartList.ItemsSource = _cart.Items;
     }
 
+    private void AddItem(object sender, EventArgs e)
+    {
+        var food = (sender as Button)?.BindingContext as Food;
+        if (food != null)
+            food.AddOne();
+    }
+
+    private void RemoveItem(object sender, EventArgs e)
+    {
+        var food = (sender as Button)?.BindingContext as Food;
+        if (food != null)
+            _cart.SubtractFood(food);
+    }
+
     private async void goToMenu(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(Menu));
@@ -21,5 +35,7 @@ public partial class Cart : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(Confirmation));
     }
+
+
 }
 

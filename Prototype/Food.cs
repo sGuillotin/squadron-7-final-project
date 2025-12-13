@@ -6,34 +6,54 @@ using System.Threading.Tasks;
 
 namespace MauiApp1
 {
-    //Food class - countains name string, price float, and int quantity
-    internal class Food
+    public class Food
     {
+        // Made fields protected so subclasses still work
         protected string food;
         protected double price;
         protected int quantity;
+
         public Food(string food, double price)
         {
             this.food = food;
             this.price = price;
             this.quantity = 1;
-            }
-        //getters for food and price - no setters since item data cannot be written by user
-        public string getFood()
+        }
+
+        // Properties for XAML binding
+        public string Name => food;
+        public int Quantity => quantity;
+
+        // Must be virtual (SizedFood depends on this)
+        public virtual double getPrice()
         {
-            return food;
+            return price * quantity;
         }
-        virtual public double getPrice()
+
+        //
+        public void AddOne()
         {
-            return (price*quantity);
+            quantity++;
         }
-        //for quantity, it'll be modified with add to cart - increment/decrement only for now
-        public void addItem() { 
-            this.quantity++;
+
+        public void RemoveOne()
+        {
+            if (quantity > 0)
+                quantity--;
         }
-        public void removeItem() { 
-            this.quantity--;
+
+        public Food(string food)
+        {
+            this.food = food;
+            this.price = 0;
+            this.quantity = 1;
         }
-        
+
     }
 }
+
+
+
+
+
+
