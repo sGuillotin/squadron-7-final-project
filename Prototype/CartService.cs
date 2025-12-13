@@ -11,7 +11,7 @@ public class CartService
 {
     public ObservableCollection<Food> Items { get; private set; } = new();
 
-    public void AddFood(string foodName)
+    public void AddFood(string foodName, double price = 0.00)
     {
         var existing = Items.FirstOrDefault(f => f.Name == foodName);
 
@@ -21,7 +21,7 @@ public class CartService
         }
         else
         {
-            var food = new Food(foodName);
+            var food = new Food(foodName, price);
             food.AddOne();
             Items.Add(food);
         }
