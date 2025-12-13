@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Signup"
-             Title="Signup">
+             x:Class="MauiApp1.Signup">
     <VerticalStackLayout>
         <Label 
         Text="Signup Page"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
 
-        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
+        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40"/>
 
 
         <Entry Placeholder="Choose your username" x:Name="usr" />
         <Entry Placeholder="Choose your password" x:Name="pas"/>
 
-        <Button Text="Sign up" Clicked="goToMenu" BackgroundColor="Orange"/>
+        <Button Text="Sign up" Clicked="goToMenu"/>
         <Label 
             Text="" 
             x:Name="Error"
-            TextColor="DarkRed"
+            TextColor="#4DCBED"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             />

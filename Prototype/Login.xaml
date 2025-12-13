@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Login"
-             Title="Login">
+             x:Class="MauiApp1.Login">
     <VerticalStackLayout>
         <Label 
             Text="Login Page"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40" BackgroundColor="Orange"/>
+        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40"/>
 
 
         <Entry Placeholder="Type in your username" x:Name="usr" />
@@ -17,11 +16,11 @@
 
 
 
-        <Button Text="Sign in" Clicked="goToMenu" BackgroundColor="Orange"/>
+        <Button Text="Sign in" Clicked="goToMenu"/>
         <Label 
             Text="" 
             x:Name="Error"
-            TextColor="DarkRed"
+            TextColor="#4DCBED"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="0, 0, 0, 40"/>
@@ -36,7 +35,7 @@
             HorizontalOptions="Center"
             />
 
-        <Button Text="Go to signup" Clicked="goToSignup" BackgroundColor="Orange"/>
+        <Button Text="Go to signup" Clicked="goToSignup"/>
 
     </VerticalStackLayout>
 </ContentPage>

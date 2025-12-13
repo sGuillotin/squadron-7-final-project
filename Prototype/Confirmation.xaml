@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Confirmation"
-             Title="Confirmation">
+             x:Class="MauiApp1.Confirmation">
     <VerticalStackLayout>
         <Label 
             Text="Confirmation Page"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button Text="Order more?" Clicked="goToMenu" BackgroundColor="Orange"/>
+        <Button Text="Order more?" Clicked="goToMenu"/>
 
-        <Button Text="All Done?" Clicked="goToOrders" BackgroundColor="Orange"/>
+        <Button Text="All Done?" Clicked="goToOrders"/>
     </VerticalStackLayout>
 </ContentPage>
