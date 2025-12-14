@@ -40,13 +40,13 @@ public partial class Menu : ContentPage
         {
             case "Mains":
                 this.oneFood = menuData.getFood("Mains", "Margherita Pizza");
-                one.Text = oneFood.Name;
+                one.Text = oneFood.Name + "\n" + "$" + oneFood.Price + ".00";
                 this.twoFood = menuData.getFood("Mains", "Spaghetti Carbonara");
-                two.Text = twoFood.Name;
+                two.Text = twoFood.Name + "\n" + "$" + twoFood.Price + ".00";
                 this.threeFood = menuData.getFood("Mains", "Chicken Fettuccine Alfredo");
-                three.Text = threeFood.Name;
+                three.Text = threeFood.Name + "\n" + "$" + threeFood.Price + ".00";
                 this.fourFood = menuData.getFood("Mains", "Penne Alla Vodka");
-                four.Text = fourFood.Name;
+                four.Text = fourFood.Name + "\n" + "$" + fourFood.Price + ".00";
 
                 cone.Source = "pizza.png";
                 ctwo.Source = "carbonara.png";
@@ -56,13 +56,13 @@ public partial class Menu : ContentPage
 
             case "Sides":
                 this.oneFood = menuData.getFood("Sides", "Garlic Bread");
-                one.Text = oneFood.Name;
+                one.Text = oneFood.Name + "\n" + "$" + oneFood.Price + ".00";
                 this.twoFood = menuData.getFood("Sides", "Caprese Salad");
-                two.Text = twoFood.Name;
+                two.Text = twoFood.Name + "\n" + "$" + twoFood.Price + ".00";
                 this.threeFood = menuData.getFood("Sides", "Roasted Broccoli");
-                three.Text = threeFood.Name;
+                three.Text = threeFood.Name + "\n" + "$" + threeFood.Price + ".00";
                 this.fourFood = menuData.getFood("Sides", "Focaccia Bread");
-                four.Text = fourFood.Name;
+                four.Text = fourFood.Name + "\n" + "$" + fourFood.Price + ".00";
 
                 cone.Source = "bread.png";
                 ctwo.Source = "caprese.png";
@@ -72,13 +72,13 @@ public partial class Menu : ContentPage
 
             case "Drinks":
                 this.oneFood = menuData.getFood("Drinks", "Water");
-                one.Text = oneFood.Name;
+                one.Text = oneFood.Name + "\n" + "$" + oneFood.Price + ".00";
                 this.twoFood = menuData.getFood("Drinks", "Espresso");
-                two.Text = twoFood.Name;
+                two.Text = twoFood.Name + "\n" + "$" + twoFood.Price + ".00";
                 this.threeFood = menuData.getFood("Drinks", "Limonata");
-                three.Text = threeFood.Name;
+                three.Text = threeFood.Name + "\n" + "$" + threeFood.Price + ".00";
                 this.fourFood = menuData.getFood("Drinks", "Chinotto");
-                four.Text = fourFood.Name;
+                four.Text = fourFood.Name + "\n" + "$" + threeFood.Price + ".00";
 
                 cone.Source = "water.png";
                 ctwo.Source = "espresso.png";
@@ -88,13 +88,13 @@ public partial class Menu : ContentPage
 
             case "Desserts":
                 this.oneFood = menuData.getFood("Desserts", "Tiramisu");
-                one.Text = oneFood.Name;
+                one.Text = oneFood.Name + "\n" + "$" + oneFood.Price + ".00";
                 this.twoFood = menuData.getFood("Desserts", "Panna Cotta");
-                two.Text = twoFood.Name;
+                two.Text = twoFood.Name + "\n" + "$" + twoFood.Price + ".00";
                 this.threeFood = menuData.getFood("Desserts", "Gelato");
-                three.Text = threeFood.Name;
+                three.Text = threeFood.Name + "\n" + "$" + threeFood.Price + ".00";
                 this.fourFood = menuData.getFood("Desserts", "Cannoli");
-                four.Text = fourFood.Name;
+                four.Text = fourFood.Name + "\n" + "$" + fourFood.Price + ".00";
 
                 cone.Source = "tiramisu.png";
                 ctwo.Source = "panna.png";
