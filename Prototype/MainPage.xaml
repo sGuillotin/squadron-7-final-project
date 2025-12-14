@@ -5,7 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="Sette.png" HeightRequest="300"/>
+            <Image Source="vertical.png" HeightRequest="300" Margin="0, 30, 0, 0"/>
 
             <Button Text="Log in" Clicked="goToLogin" Margin="0, 50, 0, 15" WidthRequest="500"/>
 
