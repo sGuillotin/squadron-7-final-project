@@ -13,6 +13,10 @@ namespace MauiApp1
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
+                    //Autumnn's way better fonts
+                    fonts.AddFont("FacultyGlyphic-Regular.ttf", "FacultyGlyphicRegular");
+                    fonts.AddFont("Ubuntu-Regular.ttf", "UbuntuRegular");
                 });
 
             builder.Services.AddSingleton<CartService>();
