@@ -12,8 +12,8 @@
             HorizontalOptions="Center"
             Margin="0, 0, 0, 5"
         />
-        <Entry Placeholder="Choose your username" x:Name="usr" WidthRequest="1000" Margin="0, 0, 0, 15"/>
-        <Entry Placeholder="Choose your password" x:Name="pas" WidthRequest="1000"/>
+        <Entry Placeholder="Choose your username" x:Name="usr" WidthRequest="1000" Margin="0, 0, 0, 15" FontFamily="UbuntuRegular" FontSize="18"/>
+        <Entry Placeholder="Choose your password" x:Name="pas" WidthRequest="1000" FontFamily="UbuntuRegular" FontSize="18"/>
 
         <Button Text="Sign up" Clicked="goToMenu" WidthRequest="500" Margin="0, 50, 0, 15"/>
 

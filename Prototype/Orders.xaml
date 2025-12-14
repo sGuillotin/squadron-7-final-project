@@ -7,7 +7,8 @@
             Text="Orders complete!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            FontSize="20"
+            FontSize="35"
+            FontFamily="FacultyGlyphicRegular"
         />
 
         <Button Text="Done" Clicked="goToMain" WidthRequest="700" Margin="0, 20, 0, 15"/>

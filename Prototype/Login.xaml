@@ -13,8 +13,8 @@
             Margin="0, 0, 0, 5"
         />
 
-        <Entry Placeholder="Type in your username" x:Name="usr" WidthRequest="1000" Margin="0, 0, 0, 15"/>
-        <Entry Placeholder="Type in your password" x:Name="pas" WidthRequest="1000"/>
+        <Entry Placeholder="Type in your username" x:Name="usr" WidthRequest="1000" Margin="0, 0, 0, 15" FontFamily="UbuntuRegular" FontSize="18"/>
+        <Entry Placeholder="Type in your password" x:Name="pas" WidthRequest="1000" FontFamily="UbuntuRegular" FontSize="18"/>
 
         <Button Text="Log in" Clicked="goToMenu" WidthRequest="500" Margin="0, 50, 0, 15"/>
 
