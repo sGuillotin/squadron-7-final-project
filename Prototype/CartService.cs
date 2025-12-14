@@ -22,7 +22,6 @@ public class CartService
         else
         {
             var food = new Food(foodName, price);
-            food.AddOne();
             Items.Add(food);
         }
     }
