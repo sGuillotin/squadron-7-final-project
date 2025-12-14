@@ -1,9 +1,16 @@
+using System.Text.Json;
+
 namespace MauiApp1;
 
 public partial class Menu : ContentPage
 {
     private readonly CartService _cart;
     LoginManager menuHelper = new LoginManager();
+    private MenuData menuData = new MenuData();
+    private Food oneFood;
+    private Food twoFood;
+    private Food threeFood;
+    private Food fourFood;
 
     public Menu(CartService cart)
     {
@@ -12,6 +19,7 @@ public partial class Menu : ContentPage
 
         // Default selection
         Foods.SelectedIndex = 0;
+        
     }
 
     private async void goToCart(object sender, EventArgs e)
@@ -31,10 +39,14 @@ public partial class Menu : ContentPage
         switch (selected)
         {
             case "Mains":
-                one.Text = "Margherita Pizza";
-                two.Text = "Spaghetti Carbonara";
-                three.Text = "Chicken Fettuccine Alfredo";
-                four.Text = "Penne Alla Vodka";
+                this.oneFood = menuData.getFood("Mains", "Margherita Pizza");
+                one.Text = oneFood.Name;
+                this.twoFood = menuData.getFood("Mains", "Spaghetti Carbonara");
+                two.Text = twoFood.Name;
+                this.threeFood = menuData.getFood("Mains", "Chicken Fettuccine Alfredo");
+                three.Text = threeFood.Name;
+                this.fourFood = menuData.getFood("Mains", "Penne Alla Vodka");
+                four.Text = fourFood.Name;
 
                 cone.Source = "pizza.png";
                 ctwo.Source = "carbonara.png";
@@ -43,10 +55,14 @@ public partial class Menu : ContentPage
                 break;
 
             case "Sides":
-                one.Text = "Garlic Bread";
-                two.Text = "Caprese Salad";
-                three.Text = "Roasted Broccoli";
-                four.Text = "Focaccia Bread";
+                this.oneFood = menuData.getFood("Sides", "Garlic Bread");
+                one.Text = oneFood.Name;
+                this.twoFood = menuData.getFood("Sides", "Caprese Salad");
+                two.Text = twoFood.Name;
+                this.threeFood = menuData.getFood("Sides", "Roasted Broccoli");
+                three.Text = threeFood.Name;
+                this.fourFood = menuData.getFood("Sides", "Focaccia Bread");
+                four.Text = fourFood.Name;
 
                 cone.Source = "bread.png";
                 ctwo.Source = "caprese.png";
@@ -55,10 +71,14 @@ public partial class Menu : ContentPage
                 break;
 
             case "Drinks":
-                one.Text = "Water";
-                two.Text = "Espresso";
-                three.Text = "Limonata";
-                four.Text = "Chinotto";
+                this.oneFood = menuData.getFood("Drinks", "Water");
+                one.Text = oneFood.Name;
+                this.twoFood = menuData.getFood("Drinks", "Espresso");
+                two.Text = twoFood.Name;
+                this.threeFood = menuData.getFood("Drinks", "Limonata");
+                three.Text = threeFood.Name;
+                this.fourFood = menuData.getFood("Drinks", "Chinotto");
+                four.Text = fourFood.Name;
 
                 cone.Source = "water.png";
                 ctwo.Source = "espresso.png";
@@ -67,10 +87,14 @@ public partial class Menu : ContentPage
                 break;
 
             case "Desserts":
-                one.Text = "Tiramisu";
-                two.Text = "Panna Cotta";
-                three.Text = "Gelato";
-                four.Text = "Cannoli";
+                this.oneFood = menuData.getFood("Desserts", "Tiramisu");
+                one.Text = oneFood.Name;
+                this.twoFood = menuData.getFood("Desserts", "Panna Cotta");
+                two.Text = twoFood.Name;
+                this.threeFood = menuData.getFood("Desserts", "Gelato");
+                three.Text = threeFood.Name;
+                this.fourFood = menuData.getFood("Desserts", "Cannoli");
+                four.Text = fourFood.Name;
 
                 cone.Source = "tiramisu.png";
                 ctwo.Source = "panna.png";
@@ -89,13 +113,13 @@ public partial class Menu : ContentPage
     private void AddOrder(object sender, EventArgs e)
     {
         if (sender == bone)
-            _cart.AddFood(one.Text);
+            _cart.AddFood(this.oneFood.Name,this.oneFood.Price);
         else if (sender == btwo)
-            _cart.AddFood(two.Text);
+            _cart.AddFood(this.twoFood.Name,this.twoFood.Price);
         else if (sender == bthree)
-            _cart.AddFood(three.Text);
+            _cart.AddFood(this.threeFood.Name,this.threeFood.Price);
         else if (sender == bfour)
-            _cart.AddFood(four.Text);
+            _cart.AddFood(this.fourFood.Name,this.fourFood.Price);
     }
 
 }
