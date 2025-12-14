@@ -28,7 +28,7 @@ namespace MauiApp1
         // Must be virtual (SizedFood depends on this)
         public virtual double getPrice()
         {
-            return price * quantity;
+            return (price * quantity);
         }
 
         //
