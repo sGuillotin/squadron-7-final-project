@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
 
 namespace MauiApp1
 {
@@ -14,7 +15,7 @@ namespace MauiApp1
         public MenuData()
         {
             this.menuPages = new Dictionary<string, Dictionary<string, Food>>();
-            this.menuPages["page"]["food"] = new Food("food", 1.00);
+            buildMenu();
         }
         //adds page to menu
         public void addPage(string page)
@@ -33,6 +34,34 @@ namespace MauiApp1
         //gets Food item
         public Food getFood(string page, string food) {
             return this.menuPages[page][food];
+        }
+        public void buildMenu()
+        {
+            //Menu build - pages
+            this.addPage("Mains");
+            this.addPage("Sides");
+            this.addPage("Drinks");
+            this.addPage("Desserts");
+            //Menu build - food
+            this.addFood("Mains", "Margherita Pizza", 19.00);
+            this.addFood("Mains", "Spaghetti Carbonara", 22.00);
+            this.addFood("Mains", "Chicken Fettuccine Alfredo", 24.00);
+            this.addFood("Mains", "Penne Alla Vodka", 21.00);
+
+            this.addFood("Sides", "Garlic Bread", 8.00);
+            this.addFood("Sides", "Caprese Salad", 12.00);
+            this.addFood("Sides", "Roasted Broccoli", 10.00);
+            this.addFood("Sides", "Focaccia Bread", 9.00);
+
+            this.addFood("Drinks", "Water", 2.00);
+            this.addFood("Drinks", "Espresso", 5.00);
+            this.addFood("Drinks", "Limonata", 6.00);
+            this.addFood("Drinks", "Chinotto", 6.00);
+
+            this.addFood("Desserts", "Tiramisu", 11.00);
+            this.addFood("Desserts", "Panna Cotta", 10.00);
+            this.addFood("Desserts", "Gelato", 8.00);
+            this.addFood("Desserts", "Cannoli", 9.00);
         }
     }
 }
