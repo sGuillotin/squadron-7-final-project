@@ -7,7 +7,7 @@
 
 
             <HorizontalStackLayout BackgroundColor="#7D062E">
-                <Image Source="horizontal.png" HeightRequest="60" Margin="5"/>
+                <Image Source="horizontal.png" HeightRequest="60" Margin="5,0,0,0"/>
             </HorizontalStackLayout>
 
             <Picker x:Name="Foods" SelectedIndexChanged="OnFoodSelected" WidthRequest="1200" Margin="0, 20, 0, 0">
