@@ -32,7 +32,7 @@
                 </Grid.ColumnDefinitions>
 
                 <VerticalStackLayout Grid.Row="0"  Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Image Source="null" x:Name="cone" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <Image Source="null" x:Name="cone" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout >
                         <Label Text="" x:Name="one" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
@@ -42,7 +42,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="0"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Image Source="null" x:Name="ctwo" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <Image Source="null" x:Name="ctwo" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="two" Margin="30, 10"/>
                         <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
@@ -52,7 +52,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="1"  Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Image Source="null" x:Name="cthree" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <Image Source="null" x:Name="cthree" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="three" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
@@ -62,7 +62,7 @@
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="1"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Image Source="null" x:Name="cfour" WidthRequest="200" HeightRequest="200" Margin="10"/>
+                <Image Source="null" x:Name="cfour" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="four" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
