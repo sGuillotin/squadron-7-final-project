@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Windows.ApplicationModel.Resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,16 +23,18 @@ namespace MauiApp1
 
         // Properties for XAML binding
         public string Name => food;
-        public int Quantity => quantity;
-        public double Price => price;
+        public int Quantity => getQuantity();
+        public double Price => getPrice();
 
         // Must be virtual (SizedFood depends on this)
         public virtual double getPrice()
         {
             return (price * quantity);
         }
-
-        //
+        public int getQuantity()
+        {
+            return quantity;
+        }
         public void AddOne()
         {
             quantity++;
