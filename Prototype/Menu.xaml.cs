@@ -12,10 +12,6 @@ public partial class Menu : ContentPage
 
         // Default selection
         Foods.SelectedIndex = 0;
-
-        // Sebastien added this
-        // add $"Sign out of {usr.Text}" to sign out button
-        signout.Text = $"Sign out of {menuHelper.currentUser}"; // TODO debug
     }
 
     private async void goToCart(object sender, EventArgs e)
@@ -51,6 +47,11 @@ public partial class Menu : ContentPage
                 two.Text = "Caprese Salad";
                 three.Text = "Roasted Broccoli";
                 four.Text = "Focaccia Bread";
+
+                cone.Source = "bread.png";
+                ctwo.Source = "caprese.png";
+                cthree.Source = "broccoli.png";
+                cfour.Source = "focaccia.png";
                 break;
 
             case "Drinks":
@@ -58,13 +59,23 @@ public partial class Menu : ContentPage
                 two.Text = "Espresso";
                 three.Text = "Limonata";
                 four.Text = "Chinotto";
+
+                cone.Source = "water.png";
+                ctwo.Source = "espresso.png";
+                cthree.Source = "limonata.png";
+                cfour.Source = "chinotto.png";
                 break;
 
             case "Desserts":
                 one.Text = "Tiramisu";
                 two.Text = "Panna Cotta";
                 three.Text = "Gelato";
-                four.Text = "Canoli";
+                four.Text = "Cannoli";
+
+                cone.Source = "tiramisu.png";
+                ctwo.Source = "panna.png";
+                cthree.Source = "gelato.png";
+                cfour.Source = "cannoli.png";
                 break;
         }
 

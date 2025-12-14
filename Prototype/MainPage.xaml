@@ -5,14 +5,11 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Label 
-                Text="Welcome!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+            <Image Source="Sette.png" HeightRequest="300"/>
 
-            <Button Text="Go to login" Clicked="goToLogin" Margin="0, 0, 0, 40"/>
+            <Button Text="Log in" Clicked="goToLogin" Margin="0, 50, 0, 15" WidthRequest="500"/>
 
-            <Button Text="Go to signup" Clicked="goToSignup"/>
+            <Button Text="Sign up" Clicked="goToSignup" WidthRequest="500"/>
         </VerticalStackLayout>
     </ScrollView>
 

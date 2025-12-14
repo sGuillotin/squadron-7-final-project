@@ -3,39 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Login">
     <VerticalStackLayout>
-        <Label 
-            Text="Login Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
-        <Button Text="Go back" Clicked="goToMain" Margin="0, 0, 0, 40"/>
-
-
-        <Entry Placeholder="Type in your username" x:Name="usr" />
-        <Entry Placeholder="Type in your password" x:Name="pas"/>
-
-
-
-        <Button Text="Sign in" Clicked="goToMenu"/>
+        <Image Source="Sette.png" HeightRequest="300" Margin="0, 0, 0, 45"/>
         <Label 
             Text="" 
             x:Name="Error"
             TextColor="#4DCBED"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            Margin="0, 0, 0, 40"/>
+            Margin="0, 0, 0, 5"
+        />
 
+        <Entry Placeholder="Type in your username" x:Name="usr" WidthRequest="1000" Margin="0, 0, 0, 15"/>
+        <Entry Placeholder="Type in your password" x:Name="pas" WidthRequest="1000"/>
 
+        <Button Text="Log in" Clicked="goToMenu" WidthRequest="500" Margin="0, 50, 0, 15"/>
 
-
-
+        <Button Text="Go back" Clicked="goToMain" WidthRequest="500" Margin="0, 0, 0, 40"/>
+        
         <Label 
             Text="Or if you don't have an account..."
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            />
+            Margin="0, 0, 0, 5"
+        />
 
-        <Button Text="Go to signup" Clicked="goToSignup"/>
+        <Button Text="Go to signup" Clicked="goToSignup" WidthRequest="500"/>
 
     </VerticalStackLayout>
 </ContentPage>

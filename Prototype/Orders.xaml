@@ -6,8 +6,10 @@
         <Label 
             Text="Orders complete!"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            FontSize="20"
+        />
 
-        <Button Text="Done" Clicked="goToMain"/>
+        <Button Text="Done" Clicked="goToMain" WidthRequest="700" Margin="0, 20, 0, 15"/>
     </VerticalStackLayout>
 </ContentPage>

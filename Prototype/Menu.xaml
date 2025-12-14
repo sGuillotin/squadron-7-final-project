@@ -5,7 +5,7 @@
     
     <VerticalStackLayout>
 
-        <Picker Title="Food type" x:Name="Foods" SelectedIndexChanged="OnFoodSelected">
+        <Picker x:Name="Foods" SelectedIndexChanged="OnFoodSelected" WidthRequest="1200">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Mains</x:String>
@@ -72,7 +72,7 @@
             </Grid.ColumnDefinitions>
             <Button Text="Finished ordering" Clicked="goToCart" Margin="0, 10, 0, 20" Grid.Row="0"  Grid.Column="1"/>
 
-            <Button Text="Sign Out" x:Name="signout" Clicked="goToLogin" Grid.Row="1"  Grid.Column="1"/>
+            <Button Text="Sign out" x:Name="signout" Clicked="goToLogin" Grid.Row="1"  Grid.Column="1"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

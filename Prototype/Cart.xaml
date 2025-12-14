@@ -2,14 +2,13 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="MauiApp1.Cart"
-    Title="Cart">
+    x:Class="MauiApp1.Cart">
 
-    <VerticalStackLayout Padding="20">
+    <VerticalStackLayout>
 
-        <Label Text="Items in your cart:" FontSize="20" />
+        <Label Text="Items in your cart:" FontSize="20" HorizontalOptions="Center"/>
 
-        <CollectionView x:Name="CartList">
+        <CollectionView x:Name="CartList" Margin="600, 20, 0, 20">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <HorizontalStackLayout Spacing="10">
@@ -23,8 +22,8 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Button Text="Go back" Clicked="goToMenu" />
-        <Button Text="Submit order" Clicked="goToConfirmation" />
+        <Button Text="Go back" Clicked="goToMenu" WidthRequest="700" Margin="0, 0, 0, 15"/>
+        <Button Text="Submit order" Clicked="goToConfirmation" WidthRequest="700"/>
 
     </VerticalStackLayout>
 </ContentPage>

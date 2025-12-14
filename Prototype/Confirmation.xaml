@@ -6,10 +6,12 @@
         <Label 
             Text="Confirmation Page"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            FontSize="20"
+        />
 
-        <Button Text="Order more?" Clicked="goToMenu"/>
+        <Button Text="Order more?" Clicked="goToMenu" WidthRequest="700" Margin="0, 20, 0, 15"/>
 
-        <Button Text="All Done?" Clicked="goToOrders"/>
+        <Button Text="All Done?" Clicked="goToOrders" WidthRequest="700"/>
     </VerticalStackLayout>
 </ContentPage>
