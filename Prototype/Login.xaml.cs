@@ -31,7 +31,7 @@ public partial class Login : ContentPage
         // if not filled, display error message
         if (string.IsNullOrWhiteSpace(usr.Text) || string.IsNullOrWhiteSpace(pas.Text))
         {
-            Error.Text = "Username and password MUST be filled in to sign in";
+            Error.Text = "Username and password must be filled in to log in.";
         }
         // validate login (using method of login manager object)
         else if (loginer.ValidateLogin(usr.Text, pas.Text))

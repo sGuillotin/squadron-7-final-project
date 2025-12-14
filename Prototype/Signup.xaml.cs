@@ -29,7 +29,7 @@ public partial class Signup : ContentPage
         //if either is blank:
         if (string.IsNullOrWhiteSpace(usr.Text) || string.IsNullOrWhiteSpace(pas.Text))
         {
-            Error.Text = "Username and password MUST be filled in to sign up";
+            Error.Text = "Username and password must be filled in to sign up.";
         }
         else
         {
@@ -44,7 +44,7 @@ public partial class Signup : ContentPage
             //if RegisterNewUser throws exception (bc username already taken), catch it and display error
             catch (InvalidOperationException) //type of error object to catch
             {
-                Error.Text = "Username already taken.";
+                Error.Text = "This username is already taken, please choose a different one.";
             }
         }
     }
