@@ -36,7 +36,9 @@
                     <HorizontalStackLayout >
                         <Label Text="" x:Name="one" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    </HorizontalStackLayout>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sone"/>
+                        <Label Text="{Binding Source={x:Reference sone}, Path=Value}" />
+                </HorizontalStackLayout>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="0"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
@@ -44,7 +46,9 @@
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="two" Margin="30, 10"/>
                         <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    </HorizontalStackLayout>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="stwo"/>
+                        <Label Text="{Binding Source={x:Reference stwo}, Path=Value}" />
+                </HorizontalStackLayout>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="1"  Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
@@ -52,7 +56,9 @@
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="three" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    </HorizontalStackLayout>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sthree"/>
+                        <Label Text="{Binding Source={x:Reference sthree}, Path=Value}" />
+                </HorizontalStackLayout>
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Grid.Row="1"  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
@@ -60,7 +66,9 @@
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="four" Margin="30, 10"/>
                         <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    </HorizontalStackLayout>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sfour"/>
+                        <Label Text="{Binding Source={x:Reference sfour}, Path=Value}" />
+                </HorizontalStackLayout>
                 </VerticalStackLayout>
 
             </Grid>
