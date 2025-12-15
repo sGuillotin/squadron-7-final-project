@@ -34,6 +34,19 @@ public class CartService
         if (food.Quantity == 0)
             Items.Remove(food);
     }
+
+    public void StepSubtractFood(string food)
+    {
+        var existing = Items.FirstOrDefault(f => f.Name == food);
+        existing.RemoveOne();
+
+        if (existing.Quantity == 0)
+            Items.Remove(existing);
+    }
+
+    public void clearCart() {
+        Items.Clear();
+    }
 }
 
 

@@ -124,20 +124,27 @@ public partial class Menu : ContentPage
 
     private void StepHandler(object sender, ValueChangedEventArgs e)
     {
-        var value = (e.OldValue - e.NewValue);
-        if (value > 0)
+        if (e.NewValue > e.OldValue)
         {
-            for (int i = 0; i < value; i++)
-            {
-                if (sender == sone)
-                    _cart.AddFood(this.oneFood.Name, this.oneFood.Price);
-                else if (sender == stwo)
-                    _cart.AddFood(this.twoFood.Name, this.twoFood.Price);
-                else if (sender == sthree)
-                    _cart.AddFood(this.threeFood.Name, this.threeFood.Price);
-                else if (sender == sfour)
-                    _cart.AddFood(this.fourFood.Name, this.fourFood.Price);
-            }
+            if (sender == sone)
+                _cart.AddFood(this.oneFood.Name, this.oneFood.Price);
+            else if (sender == stwo)
+                _cart.AddFood(this.twoFood.Name, this.twoFood.Price);
+            else if (sender == sthree)
+                _cart.AddFood(this.threeFood.Name, this.threeFood.Price);
+            else if (sender == sfour)
+                _cart.AddFood(this.fourFood.Name, this.fourFood.Price);
+        }
+        if (e.NewValue < e.OldValue)
+        {
+            if (sender == sone)
+                _cart.StepSubtractFood(this.oneFood.Name);
+            else if (sender == stwo)
+                _cart.StepSubtractFood(this.twoFood.Name);
+            else if (sender == sthree)
+                _cart.StepSubtractFood(this.threeFood.Name);
+            else if (sender == sfour)
+                _cart.StepSubtractFood(this.fourFood.Name);
         }
     }
 
