@@ -105,23 +105,23 @@ public partial class Menu : ContentPage
         }
 
         // Make all add buttons visible
-        bone.IsVisible = true;
-        btwo.IsVisible = true;
-        bthree.IsVisible = true;
-        bfour.IsVisible = true;
+        //bone.IsVisible = true;
+        //btwo.IsVisible = true;
+        //bthree.IsVisible = true;
+        //bfour.IsVisible = true;
     }
 
-    private void AddOrder(object sender, EventArgs e)
-    {
-        if (sender == bone)
-            _cart.AddFood(this.oneFood.Name,this.oneFood.Price);
-        else if (sender == btwo)
-            _cart.AddFood(this.twoFood.Name,this.twoFood.Price);
-        else if (sender == bthree)
-            _cart.AddFood(this.threeFood.Name,this.threeFood.Price);
-        else if (sender == bfour)
-            _cart.AddFood(this.fourFood.Name,this.fourFood.Price);
-    }
+    //private void AddOrder(object sender, EventArgs e)
+    //{
+    //if (sender == bone)
+    //    _cart.addfood(this.onefood.name,this.onefood.price);
+    //else if (sender == btwo)
+    //    _cart.addfood(this.twofood.name,this.twofood.price);
+    //else if (sender == bthree)
+    //    _cart.addfood(this.threefood.name,this.threefood.price);
+    //else if (sender == bfour)
+    //    _cart.addfood(this.fourfood.name,this.fourfood.price);
+    //}
 
     private void StepHandler(object sender, ValueChangedEventArgs e)
     {

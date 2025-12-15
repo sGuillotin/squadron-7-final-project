@@ -35,9 +35,11 @@
                 <Image Source="null" x:Name="cone" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout >
                         <Label Text="" x:Name="one" Margin="30, 10"/>
-                        <Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
+                        <!--<Button Text="Add" x:Name="bone" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>-->
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Source={x:Reference sone}, Path=Value}"  HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
                         <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sone" ValueChanged="StepHandler"/>
-                        <Label Text="{Binding Source={x:Reference sone}, Path=Value}" />
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
                 </VerticalStackLayout>
 
@@ -45,9 +47,11 @@
                 <Image Source="null" x:Name="ctwo" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="two" Margin="30, 10"/>
-                        <Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="stwo" ValueChanged="StepHandler"/>
-                        <Label Text="{Binding Source={x:Reference stwo}, Path=Value}" />
+                        <!--<Button Text="Add" x:Name="btwo" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>-->
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Source={x:Reference stwo}, Path=Value}" HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="stwo" ValueChanged="StepHandler"/>
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
                 </VerticalStackLayout>
 
@@ -55,9 +59,11 @@
                 <Image Source="null" x:Name="cthree" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="three" Margin="30, 10"/>
-                        <Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sthree" ValueChanged="StepHandler"/>
-                        <Label Text="{Binding Source={x:Reference sthree}, Path=Value}" />
+                        <!--<Button Text="Add" x:Name="bthree" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>-->
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Source={x:Reference sthree}, Path=Value}"  HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sthree" ValueChanged="StepHandler"/>
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
                 </VerticalStackLayout>
 
@@ -65,9 +71,11 @@
                 <Image Source="null" x:Name="cfour" WidthRequest="180" HeightRequest="180" Margin="10"/>
                     <HorizontalStackLayout>
                         <Label Text="" x:Name="four" Margin="30, 10"/>
-                        <Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>
-                    <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sfour" ValueChanged="StepHandler"/>
-                        <Label Text="{Binding Source={x:Reference sfour}, Path=Value}" />
+                        <!--<Button Text="Add" x:Name="bfour" IsVisible="False" Clicked="AddOrder" WidthRequest="100"/>-->
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Source={x:Reference sfour}, Path=Value}"  HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
+                        <Stepper Minimum="0" Maximum="55" Increment="1" x:Name="sfour" ValueChanged="StepHandler"/>
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
                 </VerticalStackLayout>
 

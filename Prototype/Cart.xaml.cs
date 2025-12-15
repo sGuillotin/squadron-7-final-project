@@ -19,7 +19,6 @@ public partial class Cart : ContentPage
         var food = (sender as Button)?.BindingContext as Food;
         if (food != null)
             _cart.AddFood(food.Name,food.Price);
-
     }
 
     private void RemoveItem(object sender, EventArgs e)
