@@ -41,6 +41,7 @@ public partial class Menu : ContentPage
             case "Mains":
                 this.oneFood = menuData.getFood("Mains", "Margherita Pizza");
                 one.Text = oneFood.Name + "\n" + "$" + oneFood.Price + ".00";
+                
                 this.twoFood = menuData.getFood("Mains", "Spaghetti Carbonara");
                 two.Text = twoFood.Name + "\n" + "$" + twoFood.Price + ".00";
                 this.threeFood = menuData.getFood("Mains", "Chicken Fettuccine Alfredo");
@@ -146,6 +147,17 @@ public partial class Menu : ContentPage
             else if (sender == sfour)
                 _cart.StepSubtractFood(this.fourFood.Name);
         }
+    }
+    public double GetStepFoodCount(Food food)
+    {
+        foreach (var item in _cart.Items)
+        {
+            if (food.Name == item.Name)
+            {
+                return item.Quantity;
+            }
+        }
+        return 0;
     }
 
 }

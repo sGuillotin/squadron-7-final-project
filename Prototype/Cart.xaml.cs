@@ -36,6 +36,8 @@ public partial class Cart : ContentPage
 
     private async void goToConfirmation(object sender, EventArgs e)
     {
+        //clears cart
+        _cart.clearCart();
         await Shell.Current.GoToAsync(nameof(Confirmation));
     }
 
