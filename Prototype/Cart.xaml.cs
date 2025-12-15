@@ -11,6 +11,8 @@ public partial class Cart : ContentPage
 
         CartList.ItemsSource = _cart.Items;
     }
+    
+   
 
     private void AddItem(object sender, EventArgs e)
     {
