@@ -1,15 +1,10 @@
-﻿using Microsoft.Windows.ApplicationModel.Resources;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace MauiApp1
 {
-    public class Food
+    public class Food : INotifyPropertyChanged
     {
-        // Made fields protected so subclasses still work
         protected string food;
         protected double price;
         protected int quantity;
@@ -21,31 +16,6 @@ namespace MauiApp1
             this.quantity = 1;
         }
 
-        // Properties for XAML binding
-        public string Name => food;
-        public int Quantity => getQuantity();
-        public double Price => getPrice();
-
-        // Must be virtual (SizedFood depends on this)
-        public virtual double getPrice()
-        {
-            return (price * quantity);
-        }
-        public int getQuantity()
-        {
-            return quantity;
-        }
-        public void AddOne()
-        {
-            quantity++;
-        }
-
-        public void RemoveOne()
-        {
-            if (quantity > 0)
-                quantity--;
-        }
-
         public Food(string food)
         {
             this.food = food;
@@ -53,11 +23,45 @@ namespace MauiApp1
             this.quantity = 1;
         }
 
+        public string Name => food;
+
+        public int Quantity
+        {
+            get => quantity;
+            protected set
+            {
+                if (quantity != value)
+                {
+                    quantity = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged(nameof(Price));
+                }
+            }
+        }
+
+        public double Price => getPrice();
+
+        public virtual double getPrice()
+        {
+            return price * quantity;
+        }
+
+        public void AddOne()
+        {
+            Quantity++;
+        }
+
+        public void RemoveOne()
+        {
+            if (Quantity > 0)
+                Quantity--;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
     }
 }
-
-
-
-
-
-
