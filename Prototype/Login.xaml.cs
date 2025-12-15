@@ -36,9 +36,9 @@ public partial class Login : ContentPage
         // validate login (using method of login manager object)
         else if (loginer.ValidateLogin(usr.Text, pas.Text))
         {
+            Error.Text = "";
             // Error.Text = $"Welcome, {usr.Text}"; // how display in a diff color for success message?
             Console.WriteLine($"Login successful; Welcome, {usr.Text}");
-            System.Diagnostics.Debug.WriteLine($"Login successful; Welcome, {usr.Text}"); // what's this do? "- debug console output?" thanks IntelliJ
             // Navigate to the Menu page using its route name if there is no error
             await Shell.Current.GoToAsync(nameof(Menu));
         }
@@ -54,5 +54,4 @@ public partial class Login : ContentPage
         // Navigate to the Signup page using its route name
         await Shell.Current.GoToAsync(nameof(Signup));
     }
-
 }
